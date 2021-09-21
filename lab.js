@@ -234,13 +234,13 @@ switch(letterGrade) {
     text = "The Student is doing well.";
     break;
   case "C":
-    text = "The Student is doing alright?";
+    text = "The Student is doing alright.";
     break;
     case "D":
-      text = "The Student is not doing very well?";
+      text = "The Student is not doing very well.";
       break;
       case "F":
-    text = "The student is failing?";
+    text = "The student is failing.";
     break;
     default: 
     text = "Not an eligible grade"
