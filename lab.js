@@ -54,7 +54,8 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+let firstItem = arr[0]
+console.log(firstItem)
 
 ////////// PROBLEM 5 //////////
 /*
@@ -62,7 +63,8 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+let lastItemRemoved = arr.pop()
+console.log(lastItemRemoved)
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
@@ -74,7 +76,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(let i=0; i < family.length; i++){
+  console.log(i, family[i])
+  }
 
 
 ////////// PROBLEM 7 //////////
@@ -90,7 +94,13 @@ let evensArr = []
 
 //Code Here
 
-
+for(let i=0; i < nums.length; i++){
+  if(nums[i]%2 === 0){
+    evensArr.push(nums[i])
+    
+  }
+}
+console.log(evensArr)
 
 ////////// PROBLEM 8 //////////
 
@@ -103,6 +113,18 @@ var score = 74
 */
 
 //Code Here
+if(score >= 90){
+  console.log('A Grade')
+}else if(score > 80){
+  console.log("B Grade")
+}else if(score > 70){
+  console.log("C Grade")
+}else if(score > 60){
+  console.log("D Grade")
+}else {
+  console.log("You got an F")
+}
+
 
 
 ////////// Intermediate Problems //////////
@@ -115,13 +137,17 @@ var score = 74
 */
 
 //CODE HERE
-
+let changeMyMind = true;
+if(changeMyMind === true)
+{  (changeMyMind = false)
+} else {changeMyMind===true}
+console.log(changeMyMind)
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
-
-
+changeMyMind = !changeMyMind
+console.log(changeMyMind)
 
 
 ////////// PROBLEM 10 //////////
@@ -135,14 +161,19 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
+let someNum = myFavoriteNumbers[4]
+console.log(someNum)
 
 
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+if(myFavoriteNumbers.length < 7){
+  console.log('There are not enough numbers in this array')
+}else {
+ (someNum === myFavoriteNumbers[6])
+  console.log(someNum)}
 
 ////////// PROBLEM 11 //////////
 
@@ -154,6 +185,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 
+for(i=0; i < listOfNumbers.length; i++){
+  if(listOfNumbers[i]%3 === 0){
+    console.log(listOfNumbers[i],"is divisible by 3")
+}
+}
 
 ////////// PROBLEM 12 //////////
 // Do not edit the code below.
@@ -165,7 +201,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for(i=4; i >= 0; i--){
+  console.log(letters[i])
+}
 
 ////////// Advanced Problems //////////
 
@@ -215,3 +253,12 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+
+for(i=1; i <= 100; i++)
+if (i%3=== 0 &&i%5 === 0){
+  console.log("DevMountain")
+}else if (i%5 === 0){
+  console.log("Mountain")
+}else if (i%3 === 0){
+  console.log("Dev")
+  }else {console.log(i)}
